@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "307752435299",
+    "project_id": "luvuphuc-firebase-790e8",
+    "storage_bucket": "luvuphuc-firebase-790e8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:307752435299:android:a1a69a762c14fb527a4256",
+        "android_client_info": {
+          "package_name": "com.example.luvuphuc_firebase"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAr8yTBWt11mKpZnmVIRWox63Ir-QoqavQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
