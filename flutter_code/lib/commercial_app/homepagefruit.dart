@@ -44,7 +44,7 @@ class HomePageFruit extends StatelessWidget {
                               Expanded(
                                   child: AspectRatio(
                                       aspectRatio: 1,
-                                      child: Image.network(sp.url!))
+                                      child: Image.network(sp.anh!))
                               ),
                               Text("${sp.ten}"),
                               Text("${sp.gia} vnd",style: TextStyle(color: Colors.red),),

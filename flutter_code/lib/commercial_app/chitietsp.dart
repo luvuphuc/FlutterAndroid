@@ -41,7 +41,7 @@ class PageChiTietSP extends StatelessWidget {
             Center(
               child: Container(
                 width: w,
-                child: Image.network(sp.url ?? "No image"),
+                child: Image.network(sp.anh ?? "No image"),
               ),
             ),
             SizedBox(height: 20,),

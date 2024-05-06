@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:luvuphuc63135096/commercial_app/homepagefruit.dart';
+import 'package:luvuphuc63135096/commercial_app/page_dssp_admin.dart';
 import 'package:luvuphuc63135096/main.dart';
 import 'package:luvuphuc63135096/profile/myprofile.dart';
 import 'package:luvuphuc63135096/rss/pages/page_rss.dart';
@@ -23,7 +24,8 @@ class PageHome extends StatelessWidget {
             children: [
               _buildButton(context,label: "My profile", destination: MyProfile()),
               _buildButton(context,label: "My Home Page Fruit", destination: HomePageFruit()),
-              _buildButton(context,label: "RSS APP", destination: RSSApp())
+              _buildButton(context,label: "RSS APP", destination: RSSApp()),
+              _buildButton(context,label: "DSSP App", destination: PageDSSP_Admin())
             ],
           ),
         ),
