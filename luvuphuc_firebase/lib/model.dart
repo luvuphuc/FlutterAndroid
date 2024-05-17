@@ -1,5 +1,3 @@
-
-
 import 'package:cloud_firestore/cloud_firestore.dart';
 
 class SinhVien{
@@ -43,17 +41,15 @@ class SinhVienSnapshot{
   }
 
   static addNew(SinhVien sv){
-    return FirebaseFirestore.instance.collection("LuVuPhuc-firebase").add(sv.toJson());
+    return FirebaseFirestore.instance.collection("SinhVien").add(sv.toJson());
   }
   Future<void> capNhat(SinhVien sv) async{
     docRef.update(sv.toJson());
   }
-
   static Stream<List<SinhVienSnapshot>> getAll(){
-    var querySnapshot = FirebaseFirestore.instance.collection("SinhVien").
-    snapshots();
-    return querySnapshot.map(
-            (qns) => qns.docs.map(
+    Stream<QuerySnapshot> sqs = FirebaseFirestore.instance.collection("SinhVien").snapshots();
+    return sqs.map(
+            (qs) => qs.docs.map(
                 (docSnap) => SinhVienSnapshot.fromDocSnap(docSnap)
         ).toList());
   }

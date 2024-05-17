@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:luvuphuc_firebase/firebase_auth/firebase_auth.dart';
 import 'package:luvuphuc_firebase/page_sinhvien.dart';
+import 'package:luvuphuc_firebase/test_url_launcher.dart';
 import 'package:luvuphuc_firebase/widget_connect_firebase.dart';
 
 void main() {
@@ -12,8 +14,8 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MyFirebaseconnect(
-      erroMessage: "Lỗi kết nối FireBase",
+    return MyFirebaseConnect(
+      errorMessage: "Lỗi kết nối FireBase",
       connectingMessage: "Đang kết nối....",
       builder: (context) => MaterialApp(
         debugShowCheckedModeBanner: false,
@@ -23,7 +25,7 @@ class MyApp extends StatelessWidget {
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
           useMaterial3: true,
         ),
-        home: const PageSinhVien(),
+        home: const AuthAppDemo(),
       ),
     );
   }
@@ -63,12 +65,6 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
-    // This method is rerun every time setState is called, for instance as done
-    // by the _incrementCounter method above.
-    //
-    // The Flutter framework has been optimized to make rerunning build methods
-    // fast, so that you can just rebuild anything that needs updating rather
-    // than having to individually change instances of widgets.
     return Scaffold(
       appBar: AppBar(
         // TRY THIS: Try changing the color here to a specific color (to

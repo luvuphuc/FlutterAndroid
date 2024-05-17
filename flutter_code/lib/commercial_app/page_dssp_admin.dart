@@ -3,6 +3,8 @@ import 'dart:ffi';
 import 'package:flutter/material.dart';
 import 'package:flutter_slidable/flutter_slidable.dart';
 import 'package:luvuphuc63135096/commercial_app/models.dart';
+import 'package:luvuphuc63135096/commercial_app/page_capnhat_sp.dart';
+import 'package:luvuphuc63135096/commercial_app/page_chitiet_sp.dart';
 import 'package:luvuphuc63135096/commercial_app/widget_connect_firebase.dart';
 
 class FruitStoreAdmin extends StatelessWidget {
@@ -73,7 +75,7 @@ class PageDSSP_Admin extends StatelessWidget {
                           // An action can be bigger than the others.
                           flex: 2,
                           onPressed: (context) {
-
+                            Navigator.of(context).push(MaterialPageRoute(builder: (context) => PageCapNhatSPAdmin(fruitSnapshot: fsn),));
                           },
                           backgroundColor: Colors.blue,
                           foregroundColor: Colors.white,
@@ -83,7 +85,7 @@ class PageDSSP_Admin extends StatelessWidget {
                         SlidableAction(
                           flex: 2,
                           onPressed: (context) {
-
+                            fsn.xoa();
                           },
                           backgroundColor: Colors.red,
                           foregroundColor: Colors.white,
@@ -100,7 +102,8 @@ class PageDSSP_Admin extends StatelessWidget {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-
+          Navigator.of(context).push(MaterialPageRoute(builder: (context) => PageChiTietSPAdmin(),)
+          );
         },
         child: Icon(Icons.add),
       ),

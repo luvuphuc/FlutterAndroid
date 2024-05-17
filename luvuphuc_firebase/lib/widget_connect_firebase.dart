@@ -2,20 +2,20 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 
 import 'firebase_options.dart';
-class MyFirebaseconnect extends StatefulWidget {
-  final String erroMessage;
+class MyFirebaseConnect extends StatefulWidget {
+  final String errorMessage;
   final String connectingMessage;
   final Widget Function(BuildContext context) builder;
-  const MyFirebaseconnect({Key? key,
-    required this.erroMessage,
+  const MyFirebaseConnect({Key? key,
+    required this.errorMessage,
     required this.connectingMessage,
     required this.builder});
 
   @override
-  State<MyFirebaseconnect> createState() => _MyFirebaseconnectState();
+  State<MyFirebaseConnect> createState() => _MyFirebaseConnectState();
 }
 
-class _MyFirebaseconnectState extends State<MyFirebaseconnect> {
+class _MyFirebaseConnectState extends State<MyFirebaseConnect> {
   bool ketNoi = false;
   bool loi = false;
   @override
@@ -25,7 +25,7 @@ class _MyFirebaseconnectState extends State<MyFirebaseconnect> {
         Container(
           color: Colors.white,
           child: Center(
-            child: Text(widget.erroMessage,
+            child: Text(widget.errorMessage,
               style: TextStyle(fontSize: 16, color: Colors.blue ),
               textDirection: TextDirection.ltr,
             ),
