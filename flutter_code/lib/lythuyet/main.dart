@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:luvuphuc63135096/app_state_example/listview_provider/giohang_app.dart';
 import 'package:luvuphuc63135096/app_state_example/page_counter.dart';
+import 'package:luvuphuc63135096/calculate/pagecalculate.dart';
 import 'package:luvuphuc63135096/form/page_from_mathang.dart';
 import 'package:luvuphuc63135096/getx/get_counter.dart';
 import 'package:luvuphuc63135096/json_test/page_test_json.dart';
@@ -78,6 +79,7 @@ class _MyHomePageState extends State<MyHomePage> {
             _buildButton(context,label: "Page login", destination: MyLoginPageProvider()),
             _buildButton(context,label: "Page login getx", destination: LoginPageGetX()),
             _buildButton(context,label: "Page photo Json", destination: PagePhotoJson()),
+            _buildButton(context,label: "Page photo Json", destination: PageCalculate()),
             ElevatedButton(onPressed: (){
               setState(() {
                 if(tet == "Tết đến rồi")

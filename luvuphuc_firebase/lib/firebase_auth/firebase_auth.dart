@@ -3,6 +3,7 @@ import 'package:firebase_auth/firebase_auth.dart' hide EmailAuthProvider,PhoneAu
 import 'package:luvuphuc_firebase/widget_connect_firebase.dart';
 import 'package:flutterfire_ui/auth.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+
 class AuthAppDemo extends StatelessWidget {
   const AuthAppDemo({super.key});
 
